@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative 3D Map of IIT Gandhinagar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive 3D Map of IIT Gandhinagar</h1>
+
+    <!-- 3D Map Canvas -->
+    <canvas id="mapCanvas"></canvas>
+
+    <!-- Controls Section -->
+    <div id="controls">
+        <button id="trackLocation">📍 Show My Location</button>
+        <input type="text" id="markerLabel" placeholder="Enter marker name">
+        <select id="markerCategory">
+            <option value="food">Food Stall</option>
+            <option value="event">Event</option>
+            <option value="restroom">Restroom</option>
+            <option value="emergency">Emergency</option>
+        </select>
+        <button id="addMarker">➕ Add Marker</button>
+    </div>
+
+    <!-- Heatmap for Accessibility Reports -->
+    <div id="heatmapContainer"></div>
+    <button id="reportAccessibility">🚨 Report Accessibility Issue</button>
+
+    <!-- Filter & Search -->
+    <div id="search-filter">
+        <select id="markerFilter">
+            <option value="all">Show All</option>
+            <option value="food">Food Stall</option>
+            <option value="event">Event</option>
+            <option value="restroom">Restroom</option>
+            <option value="emergency">Emergency</option>
+        </select>
+        <input type="text" id="searchBar" placeholder="Search markers...">
+        <ul id="searchResults"></ul>
+    </div>
+
+    <!-- Voice Search -->
+    <button id="voiceSearch">🎤 Voice Search</button>
+
+    <!-- Chat Section -->
+    <div id="chat">
+        <h2>Live Chat</h2>
+        <div id="chatRooms">
+            <select id="eventSelect">
+                <option value="global">Global Chat</option>
+            </select>
+            <button id="joinRoom">Join Room</button>
+        </div>
+        <div id="chatMessages"></div>
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button id="sendMessage">Send</button>
+        <p id="typingIndicator"></p>
+        <div id="emojiPicker">😀 😂 ❤️ 🎉 👍 👎</div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div id="ai-chat">
+        <h2>Ask the AI</h2>
+        <input type="text" id="aiInput" placeholder="Ask about events...">
+        <button id="askAI">Ask</button>
+        <p id="aiResponse"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

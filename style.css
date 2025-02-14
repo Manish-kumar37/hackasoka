@@ -1,0 +1,135 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* 3D Map Canvas */
+canvas {
+    width: 90vw;
+    height: 80vh;
+    border: 2px solid black;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Controls Section */
+#controls {
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+button, select, input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* GPS & Marker Buttons */
+#trackLocation {
+    background-color: #007bff;
+    color: white;
+}
+
+#addMarker {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Heatmap & Accessibility Reports */
+#heatmapContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#reportAccessibility {
+    background-color: #ff5722;
+    color: white;
+}
+
+/* Search & Filter Section */
+#search-filter {
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Voice Search */
+#voiceSearch {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Chat Section */
+#chat {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chatMessages {
+    height: 150px;
+    overflow-y: scroll;
+    background: #f9f9f9;
+    padding: 5px;
+}
+
+#typingIndicator {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Chat Rooms */
+#chatRooms {
+    margin-bottom: 10px;
+}
+
+/* Emoji Picker */
+#emojiPicker {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* AI Chatbot */
+#ai-chat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#aiResponse {
+    font-size: 14px;
+    color: #333;
+}
